@@ -17,4 +17,4 @@ with open('cvsCollection.csv', 'w', newline='') as file:
 df_export = pd.DataFrame(lista, columns=['Index', 'Jogo', 'Consola'])
 
 with pd.ExcelWriter('excelVgCollection.xlsx', engine='xlsxwriter') as writer:
-    df_export.to_excel(writer, sheet_name='welcome', index=False)
+    df_export.to_excel(writer, sheet_name='Colecção', index=False)
